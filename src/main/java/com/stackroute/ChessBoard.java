@@ -8,9 +8,9 @@ public class ChessBoard
             for (int i = 0; i < row; i++) {
                 for (int j = 0; j < column; j++) {
                     if (((i + j) % 2) == 0) {
-                        result[i][j] = "WW";
+                        result[i][j] = "WW";// assigning white colour
                     } else {
-                        result[i][j] = "BB";
+                        result[i][j] = "BB";//assigning black colour
                     }
 
                 }

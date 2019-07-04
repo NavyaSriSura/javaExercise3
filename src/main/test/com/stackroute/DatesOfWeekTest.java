@@ -20,19 +20,19 @@ public class DatesOfWeekTest {
     }
 
     @Test
-    public void startDate() {
+    public void testStartDate() {
 
-        boolean expectedValue = true;
-        boolean actualValue = datesOfWeek.startDate();
+        String expectedValue = "Mon 01/07/2019";
+        String actualValue = datesOfWeek.startDate();
 
         assertEquals(expectedValue, actualValue);
 
     }
 
     @Test
-    public void endDate() {
-        boolean expectedValue1 = true;
-        boolean actualValue1 = datesOfWeek.endDate();
+    public void testEndDate() {
+        String expectedValue1 = "Sun 07/07/2019";
+        String actualValue1 = datesOfWeek.endDate();
         assertEquals(expectedValue1, actualValue1);
 
     }

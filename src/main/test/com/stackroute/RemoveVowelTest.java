@@ -20,12 +20,27 @@ RemoveVowel removeVowel;
       removeVowel=null;
     }
     @Test
-    public void check() {
+    public void testcheck() {
         String[] expected = {"nd", "ntd Stts", "Grmny", "gypt", "czchslvk"};
         String[] str = {"India", "United States", "Germany", "Egypt", "czechoslovakia"};
         String[] actual = removeVowel.checkVowel(str);
-
         assertArrayEquals(expected, actual);
     }
+    @Test
+    public void testCheckWithOnlyConsonants()//test case for only consonants
+    {
+        String[] str={"lymphs","rhythms","fly","fry"};
+        String[] expected={"lymphs","rhythms","fly","fry"};
+        String[] actual=removeVowel.checkVowel(str);
+        assertArrayEquals(expected,actual);
+    }
 
+    @Test
+    public void testCheckWithOnlyVowels()
+    {
+        String[] str={"AIEEE","OU"};
+        String[] expected={"",""};
+        String[] actual=removeVowel.checkVowel(str);
+        assertArrayEquals(expected,actual);
+    }
 }

@@ -1,6 +1,7 @@
 package com.stackroute;
 
 public class StudentMarks {
+    //method to check for invalid marks
     public String checkGrade(int array[], int numberOfStudents) {
         String var = "Valid Marks";
         for (int i = 0; i < numberOfStudents; i++) {

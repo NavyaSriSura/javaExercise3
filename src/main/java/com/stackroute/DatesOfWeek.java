@@ -5,7 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public class DatesOfWeek {
-    public boolean startDate() {
+    public String startDate() {
         Calendar c = Calendar.getInstance();
 
         // Set the calendar to monday of the current week
@@ -13,14 +13,12 @@ public class DatesOfWeek {
 
         DateFormat df = new SimpleDateFormat("EEE dd/MM/yyyy");
         String s1 = df.format(c.getTime());
-        if (s1.equals("Mon 01/07/2019"))
-            return true;
-        else
-            return false;
+
+        return s1;
 
     }
 
-    public boolean endDate() {
+    public String  endDate() {
         Calendar c = Calendar.getInstance();
         String s2 = "";
         // Set the calendar to monday of the current week
@@ -30,10 +28,7 @@ public class DatesOfWeek {
         c.add(Calendar.DATE, 6);
         //  System.out.println( c.add(Calendar.DATE,1));
         s2 = (df.format(c.getTime()));
-        if (s2.equals("Sun 07/07/2019"))
-            return true;
-        else
-            return false;
+        return s2;
 
     }
 

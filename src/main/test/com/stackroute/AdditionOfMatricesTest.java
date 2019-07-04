@@ -21,7 +21,7 @@ public class AdditionOfMatricesTest
      additionOfMatrices=null;
   }
   @Test
-    public void TestGivenMatricesReturnSum()
+    public void testGivenMatricesReturnSum()
   {
       int[][] expected = {{8, 9, 6}, {9, 6, 4}, {7, 10, 5}};
       int matrix1[][] = {{3, 2, 3}, {5, 4, 3}, {5, 6, 3}};

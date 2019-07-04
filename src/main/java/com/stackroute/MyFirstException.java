@@ -12,7 +12,7 @@ public class MyFirstException
             try {
                 throw new Exception();
             } catch (Exception e) {
-                e.printStackTrace();
+                e.printStackTrace(); //e refers to Exception Object
             } finally {
                 System.out.println("This is finally block");
             }
